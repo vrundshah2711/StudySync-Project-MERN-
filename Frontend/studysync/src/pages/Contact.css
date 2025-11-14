@@ -1,0 +1,134 @@
+.contact_container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.contact_left {
+  flex: 1;
+  text-align: left;
+}
+
+.contact_title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+}
+
+.contact_title span {
+  color: var(--primary-color);
+}
+
+.contact_desc {
+  color: var(--gray);
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.contact_form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  width: 100%;
+}
+
+.form_group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form_group label {
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.form_group input,
+.form_group textarea {
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  padding: 0.8rem;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.form_group input:focus,
+.form_group textarea:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 8px rgba(99, 102, 241, 0.3);
+}
+
+.send_btn {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: fit-content;
+}
+
+.send_btn:hover {
+  background-color: var(--accent-color);
+}
+
+.contact_right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.contact_image {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 1.5rem;
+  transition: transform 0.5s ease;
+}
+
+.contact_image:hover {
+  transform: scale(1.05);
+}
+
+.contact_details p {
+  color: var(--gray);
+  font-size: 1rem;
+  margin: 0.3rem 0;
+}
+
+@media screen and (max-width: 768px) {
+  .contact_container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact_left {
+    text-align: center;
+  }
+
+  .send_btn {
+    margin: 0 auto;
+  }
+}
+.status_message {
+  font-size: 0.95rem;
+  color: var(--primary-color);
+}
+
+.send_btn[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
