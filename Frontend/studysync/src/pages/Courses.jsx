@@ -2,13 +2,12 @@ import React, { useState, useContext, useEffect } from "react";
 import axios from "axios";
 import "./Courses.css";
 import { AuthContext } from "../context/AuthContext";
-
-import course1 from "../assets/html.svg";
-import course2 from "../assets/node-js.svg";
-import course3 from "../assets/python.svg";
-import course4 from "../assets/uiux.svg";
-import course5 from "../assets/devops.svg";
-import course6 from "../assets/ai.svg";
+import course1 from "../assets/frontend devlopment img.png";
+import course2 from "../assets/backend img.jpg";
+import course3 from "../assets/datascience img.jpg";
+import course4 from "../assets/UI-UX.jpg";
+import course5 from "../assets/DEVOPS.jpg";
+import course6 from "../assets/Deep learning.jpg";
 
 export default function Courses() {
   const { token, user } = useContext(AuthContext);
